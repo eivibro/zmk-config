@@ -30,7 +30,7 @@
             label = "DOUBLE";
             #binding-cells = <2>;
             tapping-term-ms = <200>;
-            quick_tap_ms = <100>;
+            quick_tap_ms = <200>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
@@ -45,7 +45,7 @@
 		&kp LBKT &kp COMMA &kp DOT &kp P &kp Y 				&kp F &kp G &kp C    &kp R   &kp L 
 		&kp A &kp O &kp E &kp U &kp I 			        	&kp D &kp H &kp T &kp N &kp S
 		&kp SEMI &kp Q &kp J &kp K &kp X			        &kp B &kp M  &kp W &kp V &kp Z 
-          			&bs LGUI BACKSPACE &bs LSHIFT SPACE  		&bs RET LCTRL &to 1
+          			&bs LGUI BACKSPACE &bs LSHIFT SPACE  		&bs LCTRL RET &to 1
 		>;
 		};
 
