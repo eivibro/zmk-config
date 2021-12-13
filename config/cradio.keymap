@@ -62,25 +62,25 @@
 		&dth AA ESC &kp COMMA &kp DOT &kp P &kp Y 			&kp F &kp G &kp C &kp R &kp L 
 		&dth A 	TAB &kp O     &kp E   &kp U &kp I 		       	&kp D &kp H &kp T &kp N &kp S
 		&dth OE AE  &kp Q     &kp J   &kp K &kp X		        &kp B &kp M &kp W &kp V &kp Z 
-          			&dth LGUI BACKSPACE &dth LSHIFT SPACE  		&dth LCTRL RET &to 1
+          			&dth LSHIFT SPACE  &dth LGUI BACKSPACE 		&dth LCTRL RET &to 1
 		>;
 		};
 
        		left_layer {
 		bindings = <
-		&kp NO_PIPE  &kp EXCL     &kp NO_AT       &kp HASH         &kp NO_DLLR         &kp PRCNT &kp NO_AMPS &kp NO_FSLH  &kp NO_LPAR &kp NO_RPAR 
-		&kp TAB      &kp LC(S)    &kp DQT         &kp PIPE2        &kp HASH 	       &kp MINUS &kp EQL     &kp LBKT     &kp RBKT    &kp DEL 
-		&kp ESC      &kp NO_TILDE &kp NON_US_BSLH &kp NON_US_HASH  &kp TILDE2 	       &kp MINUS &kp GRAVE   &kp LBKT     &kp RBKT    &kp DEL 
-					    &to 0  &kp LGUI  				       &kp RGUI &mo 2 
+		&kp NO_PIPE &kp EXCL     &kp NO_AT   &kp HASH    &kp NO_DLLR         &kp PRCNT   &kp NO_AMPS &kp NO_FSLH &kp NO_LPAR &kp NO_RPAR 
+		&kp TAB     &kp NO_QUOT  &kp NO_APOS &kp NO_LESS &kp NO_MORE         &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &kp NO_DASH
+		&kp ESC     &kp NO_TILDE &kp NO_BLSH &kp NO_EQL  &kp NO_QMARK 	     &kp NO_DASH &kp NO_LBRC &kp NO_LBKT &kp NO_RBKT &kp NO_RBRC
+					    		  &to 0  &to 2               &trans  &to 3 
 		>;
 		};
 		
 		right_layer {
 		bindings = <
-		&kp BANG  &kp ATSN &kp HASH  &kp DLLR  &kp PRCT    			&kp CRRT  &kp AMPS &kp KMLT &kp LPRN &kp RPRN 
-		&kp HASH  &kp QMARK  &kp FSLH  &kp COLN  &kp SCLN 			&kp MINUS &kp KP_EQUAL  &kp LBRC  &kp RBRC   &kp BKSP
-		&kp LSFT  &kp KPLS &kp LBKT &kp RBKT   &kp BSLH    			&kp UNDER &kp LEFT &kp DOWN &kp UP  &kp RIGHT
-					  &mo 3 &kp LCTL  				&kp SPC  &mo 2 
+		&kp BANG  &kp ATSN &kp HASH  &kp DLLR  &kp PRCT    			&kp KP_DIVIDE   &kp KP_N1 &kp KP_N2 &kp KP_N3 &kp KP_MINUS 
+		&kp HASH  &kp QMARK  &kp FSLH  &kp COLN  &kp SCLN 			&kp KP_MULTIPLY &kp KP_N4 &kp KP_N5 &kp KP_N6 &kp KP_PLUS
+		&kp LSFT  &kp KPLS &kp LBKT &kp RBKT   &kp BSLH    			&kp KP_EQUAL    &kp KP_N7 &kp KP_N8 &kp KP_N9 &kp KP_ENTER
+					  &trans &dth LGUI BACKSPACE                    &kp KP_DOT &to 3 
 		>;
 		};	
 		
