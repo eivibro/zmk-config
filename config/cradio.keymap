@@ -13,13 +13,11 @@
 #define OE	 SQT	   // Ø
 #define AA	 LBKT	   // Å
 #define NO_PIPE	 GRAVE	   // |
-//#define NO_EXCL  LS(N1)    // !
 #define NO_AT 	 RA(N2)    // @
-#define NO_HASH	 LS(N3)    // #
 #define NO_DLLR	 RA(N4)    // $
-#define NO_PRCNT LS(N5)    // %
 #define NO_AMPS	 LS(N6)	   // &
 #define NO_STAR	 LS(BSLH)  // *
+#define NO_FSLH  LS(N7)    // /
 #define NO_LPAR	 LS(N8)    // (
 #define NO_RPAR	 LS(N9)    // )
 #define NO_LBKT  RA(N8)    // [
@@ -30,10 +28,8 @@
 #define NO_DASH	 FSLH      // -
 #define NO_APOS	 BSLH      // '
 #define NO_EQL	 LS(N0)    // =
-#define NO_QMARK LS(DK_PLUS) // ? 
+#define NO_QMARK LS(NO_PLUS) // ? 
 #define NO_QUOT	 LS(N2)    // "
-#define NO_COL	 LS(COMMA) // :
-#define NO_SCOL  LS(DOT)   // ;
 #define NO_TILDE RA(RBKT)  // ~ 
 #define NO_LESS  NON_US_BACKSLASH // <
 #define NO_MORE  LS(NON_US_BACKSLASH) // >
@@ -63,19 +59,19 @@
                 
        		default_layer {
 		bindings = <
-		&kp  AA    &kp COMMA &kp DOT &kp P &kp Y 			&kp F &kp G &kp C &kp R &kp L 
-		&dth A TAB &kp O     &kp E   &kp U &kp I 		       	&kp D &kp H &kp T &kp N &kp S
-		&dth OE AE &kp Q     &kp J   &kp K &kp X		        &kp B &kp M &kp W &kp V &kp Z 
+		&dth AA ESC &kp COMMA &kp DOT &kp P &kp Y 			&kp F &kp G &kp C &kp R &kp L 
+		&dth A 	TAB &kp O     &kp E   &kp U &kp I 		       	&kp D &kp H &kp T &kp N &kp S
+		&dth OE AE  &kp Q     &kp J   &kp K &kp X		        &kp B &kp M &kp W &kp V &kp Z 
           			&dth LGUI BACKSPACE &dth LSHIFT SPACE  		&dth LCTRL RET &to 1
 		>;
 		};
 
        		left_layer {
 		bindings = <
-		&kp NO_PIPE  &kp EXCL     &kp AT          &kp NUM_4        &kp NUM_5		&kp NUM_6 &kp NUM_7 &kp NUM_8 &kp NUM_9 &kp NUM_0 
-		&kp TAB      &kp LC(S)    &kp DQT         &kp PIPE2        &kp HASH 		&kp MINUS &kp EQL  &kp LBKT &kp RBKT  &kp DEL 
-		&kp ESC      &kp TILDE 	  &kp NON_US_BSLH &kp NON_US_HASH  &kp TILDE2 	        &kp MINUS &kp GRAVE &kp LBKT &kp RBKT  &kp DEL 
-					    &to 0  &kp LGUI  					&kp RGUI &mo 2 
+		&kp NO_PIPE  &kp EXCL     &kp NO_AT       &kp HASH         &kp NO_DLLR         &kp PRCNT &kp NO_AMPS &kp NO_FSLH  &kp NO_LPAR &kp NO_RPAR 
+		&kp TAB      &kp LC(S)    &kp DQT         &kp PIPE2        &kp HASH 	       &kp MINUS &kp EQL     &kp LBKT     &kp RBKT    &kp DEL 
+		&kp ESC      &kp NO_TILDE &kp NON_US_BSLH &kp NON_US_HASH  &kp TILDE2 	       &kp MINUS &kp GRAVE   &kp LBKT     &kp RBKT    &kp DEL 
+					    &to 0  &kp LGUI  				       &kp RGUI &mo 2 
 		>;
 		};
 		
