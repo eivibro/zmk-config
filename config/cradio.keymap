@@ -94,14 +94,14 @@
 		>;
 		};	
 
-        	cs_layer {
-		bindings = <
-		&kp TAB    &kp Q     &kp W     &kp E     &dth NUM_8 R                       	&kp F1 &kp NUM_1     &kp NUM_2 &kp NUM_3 &kp ESC
-		&kp LSHIFT &kp A     &kp S     &kp D     &dth NUM_9 F   	             	&kp B  &kp NUM_4     &kp NUM_5 &kp NUM_6 &kp NUM_0
-		&kp LCTRL  &dth NUM_5 NUM_1 &dth NUM_6 NUM_2 &dth NUM_7 NUM_3 &kp NUM_7		&kp F2 &kp NUM_7     &kp NUM_8 &kp NUM_9 &kp F3
-					 &kp SPACE &kp SPACE			     		&to 0 &kp F4
-		>;
-		};	
+//        	cs_layer {
+//		bindings = <
+//		&kp TAB    &kp Q     &kp W     &kp E     &dth NUM_8 R                       	&kp F1 &kp NUM_1     &kp NUM_2 &kp NUM_3 &kp ESC
+//		&kp LSHIFT &kp A     &kp S     &kp D     &dth NUM_9 F   	             	&kp B  &kp NUM_4     &kp NUM_5 &kp NUM_6 &kp NUM_0
+//		&kp LCTRL  &dth NUM_5 NUM_1 &dth NUM_6 NUM_2 &dth NUM_7 NUM_3 &kp NUM_7		&kp F2 &kp NUM_7     &kp NUM_8 &kp NUM_9 &kp F3
+//					 &kp SPACE &kp SPACE			     		&to 0 &kp F4
+//		>;
+//		};	
         
 	};
 };
