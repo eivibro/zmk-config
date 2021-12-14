@@ -7,6 +7,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/ext_power.h>
 
 // norwegian definitions below
 #define AE	 SEMI	   // Æ
@@ -59,46 +60,46 @@
                 
        		default_layer {
 		bindings = <
-		&dth AA ESC &kp COMMA &kp DOT &kp P &kp Y 			     &kp F &kp G &kp C &kp R &kp L 
-		&dth A 	TAB &kp O     &kp E   &kp U &kp I 		       	     &kp D &kp H &kp T &kp N &kp S
-		&dth OE AE  &kp Q     &kp J   &kp K &kp X		             &kp B &kp M &kp W &kp V &kp Z 
-          			&dth LSHIFT SPACE  &dth LGUI BACKSPACE 		     &dth LCTRL RET &to 1
+		&dth AA ESC &kp COMMA &kp DOT &kp P &kp Y 			     		&kp F &kp G &kp C &kp R &kp L 
+		&dth A 	TAB &kp O     &kp E   &kp U &kp I 		       	     		&kp D &kp H &kp T &kp N &kp S
+		&dth OE AE  &kp Q     &kp J   &kp K &kp X		             		&kp B &kp M &kp W &kp V &kp Z 
+          			&dth LSHIFT SPACE  &dth LGUI BACKSPACE 		     		&dth LCTRL RET &to 1
 		>;
 		};
 
        		left_layer {
 		bindings = <
-		&kp NO_PIPE &kp EXCL     &kp NO_AT   &kp HASH    &kp NO_DLLR         &kp PRCNT   &kp NO_AMPS &kp NO_FSLH &kp NO_LPAR &kp NO_RPAR 
-		&kp TAB     &kp NO_QUOT  &kp NO_APOS &kp NO_LESS &kp NO_MORE         &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &kp NO_DASH
-		&kp ESC     &kp NO_TILDE &kp NO_BLSH &kp NO_EQL  &kp NO_QMARK 	     &kp NO_DASH &kp NO_LBRC &kp NO_LBKT &kp NO_RBKT &kp NO_RBRC
-					    		  &to 0  &to 2               &trans  &to 3 
+		&kp NO_PIPE &kp EXCL     &kp NO_AT   &kp HASH    &kp NO_DLLR         		&kp PRCNT   &kp NO_AMPS &kp NO_FSLH &kp NO_LPAR &kp NO_RPAR 
+		&kp TAB     &kp NO_QUOT  &kp NO_APOS &kp NO_LESS &kp NO_MORE         		&kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &kp NO_DASH
+		&kp ESC     &kp NO_TILDE &kp NO_BLSH &kp NO_EQL  &kp NO_QMARK 	     		&kp NO_DASH &kp NO_LBRC &kp NO_LBKT &kp NO_RBKT &kp NO_RBRC
+					    		  &to 0  &to 2               		&trans  &to 3 
 		>;
 		};
 		
 		right_layer {
 		bindings = <
-		&kp BANG  &kp ATSN &kp HASH  &kp DLLR  &kp PRCT    		     &kp KP_DIVIDE   &kp KP_N1 &kp KP_N2 &kp KP_N3 &kp KP_MINUS 
-		&kp HASH  &kp QMARK  &kp FSLH  &kp COLN  &kp SCLN 		     &kp KP_MULTIPLY &kp KP_N4 &kp KP_N5 &kp KP_N6 &kp KP_PLUS
-		&kp LSFT  &kp KPLS &kp LBKT &kp RBKT   &kp BSLH    		     &kp KP_EQUAL    &kp KP_N7 &kp KP_N8 &kp KP_N9 &kp KP_ENTER
-					  &trans &dth LGUI BACKSPACE                 &kp KP_DOT &to 3 
+		&kp BANG  &kp ATSN &kp HASH  &kp DLLR  &kp PRCT    		     		&kp KP_DIVIDE   &kp KP_N1 &kp KP_N2 &kp KP_N3 &kp KP_MINUS 
+		&kp HASH  &kp QMARK  &kp FSLH  &kp COLN  &kp SCLN 		     		&kp KP_MULTIPLY &kp KP_N4 &kp KP_N5 &kp KP_N6 &kp KP_PLUS
+		&kp LSFT  &kp KPLS &kp LBKT &kp RBKT   &kp BSLH    		     		&kp KP_EQUAL    &kp KP_N7 &kp KP_N8 &kp KP_N9 &kp KP_ENTER
+					  &trans &dth LGUI BACKSPACE                 		&kp KP_DOT &to 3 
 		>;
 		};	
 		
 		tri_layer {
 		bindings = <
-		&kp NUM_1  &kp NUM_2    &kp NUM_3    &kp NUM_4    &kp NUM_5          &trans &trans   &trans   &trans  &trans
-		&kp F1 &kp F2 &kp F3 &kp F4 &kp F5  			             &trans &kp PG_UP  &kp K_VOL_UP &kp K_MUTE &trans 
-		&bt BT_CLR  &bt BT_NXT &bt BT_PRV &kp F6 &kp F7   	             &trans &kp PG_DN  &kp K_VOL_DN  &trans &trans   
-					 &trans &to 4					&trans &trans 
+		&kp NUM_1  &kp NUM_2    &kp NUM_3    &kp NUM_4    &kp NUM_5          		&trans &trans   &trans   &trans  &trans
+		&kp F1 &kp F2 &kp F3 &kp F4 &kp F5  			             		&trans &kp PG_UP  &kp K_VOL_UP &kp K_MUTE &trans 
+		&bt BT_CLR  &bt BT_NXT &bt BT_PRV &kp F6 &kp F7   	             		&trans &kp PG_DN  &kp K_VOL_DN  &trans &trans   
+					 &trans &to 4			      	     		&trans &trans 
 		>;
 		};	
 
-        	game_layer {
+        	cs_layer {
 		bindings = <
-		&kp NUM_1  &kp NUM_2    &kp NUM_3    &kp NUM_4    &kp NUM_5          &trans &trans   &trans   &trans  &trans
-		&kp F1 &kp F2 &kp F3 &kp F4 &kp F5  			             &trans &kp PG_UP  &kp K_VOL_UP &kp K_MUTE &trans 
-		&bt BT_CLR  &bt BT_NXT &bt BT_PRV &kp F6 &kp F7   	             &trans &kp PG_DN  &kp K_VOL_DN  &trans &trans   
-					 &trans &trans  		             &to 0 &to 1
+		&kp TAB    &kp Q     &kp W     &kp E     &dth NUM_8 R                       	&kp F1 &kp F2     &kp F3       &kp F4     &ESC
+		&kp LSHIFT &kp A     &kp S     &kp D     &dth NUM_9 F   	             	&kp B  &kp PG_UP  &kp K_VOL_UP &kp K_MUTE &trans 
+		&kp RCTRL  &dth NUM_5 NUM_1 &dth NUM_6 NUM_2 &dth NUM_7 NUM_3 &kp NUM_7		&trans &kp PG_DN  &kp K_VOL_DN &trans 	  &trans   
+					 &kp SPACE &kp SPACE			     		&to 0 &to 1
 		>;
 		};	
         
