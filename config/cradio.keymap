@@ -10,8 +10,8 @@
 #include <dt-bindings/zmk/ext_power.h>
 
 // norwegian definitions below
-#define AE	 SEMI	   // Æ
-#define OE	 SQT	   // Ø
+#define OE	 SEMI	   // Æ
+#define AE	 SQT	   // Ø
 #define AA	 LBKT	   // Å
 #define NO_PIPE	 GRAVE	   // |
 #define NO_AT 	 RA(N2)    // @
@@ -60,9 +60,9 @@
                 
        		default_layer {
 		bindings = <
-		&dth AA ESC &kp COMMA &kp DOT &kp P &kp Y 			     		&kp F &kp G &kp C &kp R &kp L 
-		&dth A 	TAB &kp O     &kp E   &kp U &kp I 		       	     		&kp D &kp H &kp T &kp N &kp S
-		&dth OE AE  &kp Q     &kp J   &kp K &kp X		             		&kp B &kp M &kp W &kp V &kp Z 
+		&dth ESC AA &kp COMMA &kp DOT &kp P &kp Y 			     		&kp F &kp G &kp C &kp R &kp L 
+		&dth TAB A  &kp O     &kp E   &kp U &kp I 		       	     		&kp D &kp H &kp T &kp N &kp S
+		&dth AE OE  &kp Q     &kp J   &kp K &kp X		             		&kp B &kp M &kp W &kp V &kp Z 
           			&dth LSHIFT SPACE  &dth LGUI BACKSPACE 		     		&dth LCTRL RET &to 1
 		>;
 		};
