@@ -87,9 +87,9 @@
 		
 		tri_layer {
 		bindings = <
-		&kp NUM_1  &kp NUM_2    &kp NUM_3    &kp NUM_4    &kp NUM_5          		&trans &trans   &trans   &trans  &trans
-		&kp F1 &kp F2 &kp F3 &kp F4 &kp F5  			             		&trans &kp PG_UP  &kp K_VOL_UP &kp K_MUTE &trans 
-		&bt BT_CLR  &bt BT_NXT &bt BT_PRV &kp &ext_power EP_ON &kp &ext_power EP_OF     &trans &kp PG_DN  &kp K_VOL_DN  &trans &trans   
+		&kp NUM_1  &kp NUM_2    &kp NUM_3    &kp NUM_4    &kp NUM_5          		&trans &trans       &kp K_MUTE   &kp K_PLAY_PAUSE &kp K_STOP2
+		&kp F1 &kp F2 &kp F3 &kp F4 &kp F5  			             		&trans &kp C_BRI_UP &kp K_VOL_UP &kp K_NEXT       &kp K_PREV
+		&bt BT_CLR  &bt BT_NXT &bt BT_PRV &kp &ext_power EP_ON &kp &ext_power EP_OFF    &trans &kp C_BRI_DN &kp K_VOL_DN &trans 	  &trans   
 					 &to 0 &to 4			      	     		&trans &trans 
 		>;
 		};	
