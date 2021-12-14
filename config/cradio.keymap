@@ -7,7 +7,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
-#include <dt-bindings/zmk/ext_power.h>
 
 // norwegian definitions below
 #define AE	 SEMI	   // Æ
@@ -98,7 +97,7 @@
 		bindings = <
 		&kp TAB    &kp Q     &kp W     &kp E     &dth NUM_8 R                       	&kp F1 &kp F2     &kp F3       &kp F4     &ESC
 		&kp LSHIFT &kp A     &kp S     &kp D     &dth NUM_9 F   	             	&kp B  &kp PG_UP  &kp K_VOL_UP &kp K_MUTE &trans 
-		&kp RCTRL  &dth NUM_5 NUM_1 &dth NUM_6 NUM_2 &dth NUM_7 NUM_3 &kp NUM_7		&trans &kp PG_DN  &kp K_VOL_DN &trans 	  &trans   
+		&kp LCTRL  &dth NUM_5 NUM_1 &dth NUM_6 NUM_2 &dth NUM_7 NUM_3 &kp NUM_7		&trans &kp PG_DN  &kp K_VOL_DN &trans 	  &trans   
 					 &kp SPACE &kp SPACE			     		&to 0 &to 1
 		>;
 		};	
