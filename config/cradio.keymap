@@ -50,7 +50,6 @@
             bindings = <&kp ESC>;
 	    layers = <0>;
         };
-        compatible = "zmk,combos";
         combo_tab { 
             timeout-ms = <50>;
             key-positions = <1 2 3>;
