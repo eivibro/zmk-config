@@ -36,8 +36,8 @@
 #define NO_BLSH	 RA(NON_US_BACKSLASH) // \
 
 &mt {
-  //  flavor = "tap-preferred";
-   // tapping_term_ms = <200>;
+    flavor = "tap-preferred";
+    tapping_term_ms = <200>;
 };
 
 / { 
@@ -51,15 +51,6 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
-	td: tapdance {
-            compatible = "zmk,behavior-hold-tap";
-            label = "TAPDANCE";
-            #binding-cells = <2>;
-            tapping-term-ms = <150>;
-            quick_tap_ms = <0>;
-            flavor = "tap-preferred";
-            bindings = <&kp>, <&kp>;
-        };
             
     };
 
@@ -68,15 +59,15 @@
                 
        		default_layer {
 		bindings = <
-		&mt  AA ESC &kp COMMA &kp DOT &kp P &kp Y 			     		&kp F &kp G &kp C &kp R &kp L 
-		&dth A 	TAB &kp O     &kp E   &kp U &kp I 		       	     		&kp D &kp H &kp T &kp N &kp S
+		&mt AA ESC &kp COMMA &kp DOT &kp P &kp Y 			     		&kp F &kp G &kp C &kp R &kp L 
+		&mt A 	TAB &kp O     &kp E   &kp U &kp I 		       	     		&kp D &kp H &kp T &kp N &kp S
 		&dth OE AE  &kp Q     &kp J   &kp K &kp X		             		&kp B &kp M &kp W &kp V &kp Z 
           			&dth LSHIFT SPACE  &dth LGUI BACKSPACE 		     		&dth LCTRL RET &to 1
 		>;
 		};
 
        		left_layer {
-		bindings = <
+		bindings = 
 		&kp NO_PIPE &kp EXCL     &kp NO_AT   &kp HASH    &kp NO_DLLR         		&kp PRCNT   &kp NO_AMPS &kp NO_FSLH &kp NO_LPAR &kp NO_RPAR 
 		&kp TAB     &kp NO_QUOT  &kp NO_APOS &kp NO_LESS &kp NO_MORE         		&kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &kp NO_DASH
 		&kp ESC     &kp NO_TILDE &kp NO_BLSH &kp NO_EQL  &kp NO_QMARK 	     		&kp NO_DASH &kp NO_LBRC &kp NO_LBKT &kp NO_RBKT &kp NO_RBRC
