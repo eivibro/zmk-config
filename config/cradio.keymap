@@ -51,6 +51,15 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
+	td: tapdance {
+            compatible = "zmk,behavior-hold-tap";
+            label = "TAPDANCE";
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+            quick_tap_ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+        };
             
     };
 
@@ -59,7 +68,7 @@
                 
        		default_layer {
 		bindings = <
-		&dth AA ESC &kp COMMA &kp DOT &kp P &kp Y 			     		&kp F &kp G &kp C &kp R &kp L 
+		&td  AA ESC &kp COMMA &kp DOT &kp P &kp Y 			     		&kp F &kp G &kp C &kp R &kp L 
 		&dth A 	TAB &kp O     &kp E   &kp U &kp I 		       	     		&kp D &kp H &kp T &kp N &kp S
 		&dth OE AE  &kp Q     &kp J   &kp K &kp X		             		&kp B &kp M &kp W &kp V &kp Z 
           			&dth LSHIFT SPACE  &dth LGUI BACKSPACE 		     		&dth LCTRL RET &to 1
