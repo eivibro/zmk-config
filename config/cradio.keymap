@@ -91,21 +91,21 @@
 					    		  &to 0  &to 2               		&trans  &to 3 
 		>;
 		};
-		
+
 		right_layer {
 		bindings = <
-		&kp BANG  &kp ATSN &kp HASH  &kp DLLR  &kp PRCT    		     		&kp KP_DIVIDE   &kp NUM_1 &kp NUM_2 &kp NUM_3 &kp KP_MINUS 
-		&kp HASH  &kp QMARK  &kp FSLH  &kp COLN  &kp SCLN 		     		&kp KP_MULTIPLY &kp NUM_4 &kp NUM_5 &kp NUM_6 &kp KP_PLUS
-		&kp LSFT  &kp KPLS &kp LBKT &kp RBKT   &kp BSLH    		     		&kp KP_NLCK     &kp NUM_7 &kp NUM_8 &kp NUM_9 &kp KP_ENTER
+		&mkp RCLK &mwh SCROLL_LEFT &mmv MOVE_UP       &mwh SCROLL_RIGHT &mkp LCLK       &kp KP_DIVIDE   &kp NUM_1 &kp NUM_2 &kp NUM_3 &kp KP_MINUS 
+		&kp HASH  &mmv MOVE_LEFT   &mmv MOVE_DOWN     &mmv MOVE_RIGHT   &kp SCLN   	&kp KP_MULTIPLY &kp NUM_4 &kp NUM_5 &kp NUM_6 &kp KP_PLUS
+		&kp LSFT  &kp KPLS 	   &mwh SCROLL_DOWN   &mwh SCROLL_UP    &kp BSLH   	&kp KP_NLCK     &kp NUM_7 &kp NUM_8 &kp NUM_9 &kp KP_ENTER
 					  &to 0 &dth LGUI BACKSPACE                 		&kp KP_DOT &to 3 
 		>;
 		};	
 		
 		tri_layer {
 		bindings = <
-		&kp NUM_1  &kp NUM_2    &mmv MOVE_UP   &kp NUM_4    &kp NUM_5          		&out OUT_USB &trans       &kp K_MUTE   &kp K_PLAY_PAUSE &kp K_STOP2
-		&kp F1     &kp F2 	&kp F3 	       &kp F4       &kp F5  			&out OUT_BLE &kp C_BRI_UP &kp K_VOL_UP &kp K_NEXT       &kp K_PREV
-		&bt BT_CLR  &bt BT_NXT &bt BT_PRV &ext_power EP_ON &ext_power EP_OFF            &trans &kp C_BRI_DN &kp K_VOL_DN &trans 	  &trans   
+		&kp NUM_1  &kp NUM_2    &kp NUM_3  &kp NUM_4        &kp NUM_5          		&out OUT_USB &trans       &kp K_MUTE   &kp K_PLAY_PAUSE &kp K_STOP2
+		&kp F1     &kp F2 	&kp F3 	   &kp F4           &kp F5  			&out OUT_BLE &kp C_BRI_UP &kp K_VOL_UP &kp K_NEXT       &kp K_PREV
+		&bt BT_CLR &bt BT_NXT   &bt BT_PRV &ext_power EP_ON &ext_power EP_OFF           &trans       &kp C_BRI_DN &kp K_VOL_DN &trans 	       &trans   
 					 &to 0 &to 4			      	     		&trans &trans 
 		>;
 		};	
