@@ -1,8 +1,8 @@
 /*
-* Copyright (c) 2020 The ZMK Contributors
-*
-* SPDX-License-Identifier: MIT
-*/
+ * Copyright (c) 2020 The ZMK Contributors
+ *
+ * SPDX-License-Identifier: MIT
+ */
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
@@ -35,7 +35,7 @@
 #define NO_TILDE RA(RBKT)  // ~ 
 #define NO_LESS  NON_US_BACKSLASH // <
 #define NO_MORE  LS(NON_US_BACKSLASH) // >
-#define NO_BLSH	 EQUAL	   // \
+#define NO_BLSH	 BLSH	   // \
 
 &mt {
 // flavor = "balanced";
