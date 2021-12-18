@@ -35,7 +35,7 @@
 #define NO_TILDE RA(RBKT)  // ~ 
 #define NO_LESS  NON_US_BACKSLASH // <
 #define NO_MORE  LS(NON_US_BACKSLASH) // >
-#define NO_BSLH  STAR      // \
+#define NO_BSLH  0x2B      // \
 
 &mt {
 // flavor = "balanced";
