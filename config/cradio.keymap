@@ -39,8 +39,8 @@
 #define NO_BSLH  0x2E      // \
 
 &mt {
-// flavor = "balanced";
-// tapping_term_ms = <200>;
+      flavor = "tap-preferred";
+      tapping_term_ms = <350>;
 };
 
 / { 
@@ -76,9 +76,9 @@
 		compatible = "zmk,keymap";
       		default_layer {
 		bindings = <
-		&kp AA &kp COMMA &kp DOT &kp P &kp Y 			     		&kp F &kp G &kp C &kp R &kp L 
-		&kp A  &kp O     &kp E   &kp U &kp I 		       	     		&kp D &kp H &kp T &kp N &kp S
-		&dth AE OE  &kp Q     &kp J   &kp K &kp X	             		&kp B &kp M &kp W &kp V &kp Z 
+		&kp AA 	   &kp COMMA &kp DOT &kp P &kp Y		  		&kp F &kp G &kp C &kp R &kp L 
+		&mt LALT A &kp O     &kp E   &kp U &kp I 	       	     		&kp D &kp H &kp T &kp N &kp S
+		&dth AE OE &kp Q     &kp J   &kp K &kp X	             		&kp B &kp M &kp W &kp V &kp Z 
           			&dth LSHIFT BACKSPACE &dth LGUI SPACE 	     		&dth LCTRL RET &to 1
 		>;
 		};
@@ -87,7 +87,7 @@
 		bindings = <
 		&kp NO_PIPE &kp EXCL     &kp NO_AT   &kp HASH    &kp NO_DLLR         		&kp PRCNT   &kp NO_AMPS &kp NO_FSLH &kp NO_LPAR &kp NO_RPAR 
 		&kp TAB     &kp NO_QUOT  &kp NO_APOS &kp NO_LESS &kp NO_MORE         		&kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &kp NO_DASH
-		&kp ESC     &kp NO_TILDE &kp NO_BSLH &kp NO_EQL  &kp NO_QMARK 	     		&kp KP_N0   &kp NO_LBRC &kp NO_LBKT &kp NO_RBKT &kp NO_RBRC
+		&kp ESC     &kp NO_TILDE &kp NO_BSLH &kp NO_EQL  &kp NO_QMARK 	     		&kp KP_NLCK &kp NO_LBRC &kp NO_LBKT &kp NO_RBKT &kp NO_RBRC
 					    		  &to 0  &to 2               		&trans  &to 3 
 		>;
 		};
@@ -96,8 +96,8 @@
 		bindings = <
 		&mkp RCLK &mwh SCROLL_LEFT &mmv MOVE_UP       &mwh SCROLL_RIGHT &mkp LCLK       &kp KP_DIVIDE   &kp NUM_1 &kp NUM_2 &kp NUM_3 &kp KP_MINUS 
 		&kp HASH  &mmv MOVE_LEFT   &mmv MOVE_DOWN     &mmv MOVE_RIGHT   &kp SCLN   	&kp KP_MULTIPLY &kp NUM_4 &kp NUM_5 &kp NUM_6 &kp KP_PLUS
-		&kp LSFT  &kp KPLS 	   &mwh SCROLL_DOWN   &mwh SCROLL_UP    &kp BSLH   	&kp KP_NLCK     &kp NUM_7 &kp NUM_8 &kp NUM_9 &kp KP_ENTER
-					  &to 0 &dth LGUI BACKSPACE                 		&kp KP_DOT &to 3 
+		&kp LSFT  &kp KPLS 	   &mwh SCROLL_DOWN   &mwh SCROLL_UP    &kp BSLH   	&kp KP_N0       &kp NUM_7 &kp NUM_8 &kp NUM_9 &kp KP_DOT
+					  &to 0 &dth LGUI BACKSPACE                 		&kp KP_ENTER    &to 3 
 		>;
 		};	
 		
@@ -105,7 +105,7 @@
 		bindings = <
 		&kp NUM_1  &kp NUM_2    &kp NUM_3  &kp NUM_4        &kp NUM_5          		&out OUT_USB &trans       &kp K_MUTE   &kp K_PLAY_PAUSE &kp K_STOP2
 		&kp F1     &kp F2 	&kp F3 	   &kp F4           &kp F5  			&out OUT_BLE &kp C_BRI_UP &kp K_VOL_UP &kp K_NEXT       &kp K_PREV
-		&bt BT_CLR &bt BT_NXT   &bt BT_PRV &ext_power EP_ON &ext_power EP_OFF           &trans       &kp C_BRI_DN &kp K_VOL_DN &trans 	       &trans   
+		&bt BT_CLR &bt BT_NXT   &bt BT_PRV &ext_power EP_ON &ext_power EP_OFF           &trans       &kp C_BRI_DN &kp K_VOL_DN &trans   	&trans   
 					 &to 0 &to 4			      	     		&trans &trans 
 		>;
 		};	
