@@ -58,6 +58,13 @@
             bindings = <&kp TAB>;
 	    layers = <0>;
        };
+        combo_del { 
+            timeout-ms = <50>;
+            key-positions = <2 3>;
+            bindings = <&kp DEL>;
+	    layers = <0>;
+       };
+
    };
     behaviors {
 	dth: double-tap-to-hold{
