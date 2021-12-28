@@ -99,8 +99,8 @@
        		left_layer {
 		bindings = <
 		&kp NO_PIPE &kp EXCL     &kp NO_AT   &kp HASH    &kp NO_DLLR         		&kp PRCNT   &kp NO_AMPS &kp NO_FSLH &kp NO_LPAR &kp NO_RPAR 
-		&kp TAB     &kp NO_QUOT  &kp NO_APOS &kp NO_LESS &kp NO_MORE         		&kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &kp NO_DASH
-		&kp ESC     &kp NO_TILDE &kp NO_BSLH &kp NO_EQL  &kp NO_QMARK 	     		&kp KP_NLCK &kp NO_LBRC &kp NO_LBKT &kp NO_RBKT &kp NO_RBRC
+		&kp G 	    &kp NO_QUOT  &kp NO_APOS &kp NO_LESS &kp NO_MORE         		&kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &kp NO_DASH
+		&kp LCTRL   &kp NO_TILDE &kp NO_BSLH &kp NO_EQL  &kp NO_QMARK 	     		&kp KP_NLCK &kp NO_LBRC &kp NO_LBKT &kp NO_RBKT &kp NO_RBRC
 					    		  &to 0  &to 2               		&trans  &to 3 
 		>;
 		};
