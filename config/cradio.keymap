@@ -37,6 +37,7 @@
 #define NO_LESS  NON_US_BACKSLASH // <
 #define NO_MORE  LS(NON_US_BACKSLASH) // >
 #define NO_BSLH  0x2E      // \
+#define NO_HAT	 LS(RBKT)  // ^ 
 
 &mt {
       flavor = "tap-preferred";
@@ -92,24 +93,24 @@
 		&kp AA 	   &kp COMMA &kp DOT &kp P &kp Y		  		&kp F &kp G &kp C &kp R &kp L 
 		&mt LALT A &kp O     &kp E   &kp U &kp I 	       	     		&kp D &kp H &kp T &kp N &kp S
 		&dth AE OE &kp Q     &kp J   &kp K &kp X	             		&kp B &kp M &kp W &kp V &kp Z 
-          			&dth LSHIFT BACKSPACE &dth LGUI SPACE 	     		&dth LCTRL RET &to 1
+          			&dth LSHIFT BSPC &dth LGUI SPACE 	     		&dth LCTRL RET &to 1
 		>;
 		};
 
        		left_layer {
 		bindings = <
-		&kp NO_PIPE &kp EXCL     &kp NO_AT   &kp HASH    &kp NO_DLLR         		&kp PRCNT   &kp NO_AMPS &kp NO_FSLH &kp NO_LPAR &kp NO_RPAR 
-		&kp G 	    &kp NO_QUOT  &kp NO_APOS &kp NO_LESS &kp NO_MORE         		&kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &kp NO_DASH
-		&kp LCTRL   &kp NO_TILDE &kp NO_BSLH &kp NO_EQL  &kp NO_QMARK 	     		&kp KP_NLCK &kp NO_LBRC &kp NO_LBKT &kp NO_RBKT &kp NO_RBRC
-					    		  	&to 0  &to 2            	&trans  &to 3 
+		&kp NO_PIPE &kp EXCL     &kp NO_AT   &kp HASH    &kp NO_DLLR         		&kp PRCNT   	&kp NO_AMPS &kp NO_FSLH &kp NO_LPAR &kp NO_RPAR 
+		&kp G 	    &kp NO_QUOT  &kp NO_APOS &kp NO_LESS &kp NO_MORE         		&kp LEFT    	&kp DOWN    &kp UP      &kp RIGHT   &kp NO_DASH
+		&kp LCTRL   &kp NO_TILDE &kp NO_BSLH &kp NO_EQL  &kp NO_QMARK 	     		&kp LSHIFT      &kp NO_LBRC &kp NO_LBKT &kp NO_RBKT &kp NO_RBRC
+					    		  	&to 0  &to 2            	&kp BACKSPACE 	&to 3 
 		>;
 		};
 
 		right_layer {
 		bindings = <
-		&mkp RCLK &mwh SCROLL_LEFT &mmv MOVE_UP       &mwh SCROLL_RIGHT &mkp LCLK       &kp KP_DIVIDE   &kp NUM_1 &kp NUM_2 &kp NUM_3 &kp KP_MINUS 
-		&kp HASH  &mmv MOVE_LEFT   &mmv MOVE_DOWN     &mmv MOVE_RIGHT   &kp SCLN   	&kp KP_MULTIPLY &kp NUM_4 &kp NUM_5 &kp NUM_6 &kp KP_PLUS
-		&kp LSFT  &kp KPLS 	   &mwh SCROLL_DOWN   &mwh SCROLL_UP    &kp BSLH   	&kp KP_N0       &kp NUM_7 &kp NUM_8 &kp NUM_9 &kp KP_DOT
+		&mkp RCLK &mwh SCROLL_LEFT &mmv MOVE_UP       &mwh SCROLL_RIGHT &mkp LCLK       &kp NO_FSLH     &kp N1 &kp N2 &kp N3 &kp NO_DASH
+		&kp HASH  &mmv MOVE_LEFT   &mmv MOVE_DOWN     &mmv MOVE_RIGHT   &kp SCLN   	&kp NO_STAR	&kp N4 &kp N5 &kp N6 &kp NO_PLUS
+		&kp LSFT  &kp KPLS 	   &mwh SCROLL_DOWN   &mwh SCROLL_UP    &kp BSLH   	&kp N0       	&kp N7 &kp N8 &kp N9 &kp DOT
 					  			&to 0 &dth LGUI BACKSPACE      	&kp KP_ENTER    &to 3 
 		>;
 		};	
@@ -118,8 +119,8 @@
 		bindings = <
 		&out OUT_USB &trans       &kp K_MUTE   &kp K_PLAY_PAUSE &kp K_STOP2     	&ext_power EP_ON  &bt BT_SEL 1  &bt BT_SEL 2 &bt BT_SEL 3 &out OUT_USB       
 		&out OUT_BLE &kp C_BRI_UP &kp K_VOL_UP &kp K_PREV       &kp K_NEXT      	&ext_power EP_OFF &bt BT_SEL 4  &bt BT_SEL 5 &bt BT_SEL 6 &out OUT_BLE
-		&trans       &kp C_BRI_DN &kp K_VOL_DN &trans   	&trans          	&bt BT_CLR     	  &bt BT_SEL 7  &bt BT_SEL 8 &bt BT_SEL 9 &ext_power EP_OFF           
-									&to 0 &to 0             &kp KP_ENTER &to 4			      	     		
+		&trans       &kp C_BRI_DN &kp K_VOL_DN &trans   	&trans          	&bt BT_CLR     	  &bt BT_SEL 7  &bt BT_SEL 8 &bt BT_SEL 9 &to 4
+									&to 0 &to 0             &kp KP_ENTER &to 0			      	     		
 		>;
 		};	
 
@@ -133,4 +134,4 @@
 		};	
         
 	};
-};
+
