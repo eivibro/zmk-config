@@ -109,7 +109,7 @@
 		right_layer {
 		bindings = <
 		&mkp RCLK &mwh SCROLL_LEFT &mmv MOVE_UP       &mwh SCROLL_RIGHT &mkp LCLK       &kp NO_FSLH     &kp N1 &kp N2 &kp N3 &kp NO_PLUS
-		&kp HASH  &mmv MOVE_LEFT   &mmv MOVE_DOWN     &mmv MOVE_RIGHT   &kp 5       	&kp NO_STAR	&kp N4 &kp N5 &kp N6 &kp NO_DASH
+		&kp HASH  &mmv MOVE_LEFT   &mmv MOVE_DOWN     &mmv MOVE_RIGHT   &sl 1		&kp NO_STAR	&kp N4 &kp N5 &kp N6 &kp NO_DASH
 		&kp LSFT  &kp KPLS 	   &mwh SCROLL_DOWN   &mwh SCROLL_UP    &kp BSLH   	&kp N0       	&kp N7 &kp N8 &kp N9 &kp DOT
 					  			&to 0 &dth LGUI BACKSPACE      	&kp KP_ENTER    &to 3 
 		>;
