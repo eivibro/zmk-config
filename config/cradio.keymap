@@ -108,12 +108,12 @@
 
 		right_layer {
 		bindings = <
-		&mkp RCLK &mwh SCROLL_LEFT &mmv MOVE_UP       &mwh SCROLL_RIGHT &mkp LCLK       &kp NO_FSLH     &kp N1 &kp N2 &kp N3 &kp NO_DASH
-		&kp HASH  &mmv MOVE_LEFT   &mmv MOVE_DOWN     &mmv MOVE_RIGHT   &kp SCLN   	&kp NO_STAR	&kp N4 &kp N5 &kp N6 &kp NO_PLUS
+		&mkp RCLK &mwh SCROLL_LEFT &mmv MOVE_UP       &mwh SCROLL_RIGHT &mkp LCLK       &kp NO_FSLH     &kp N1 &kp N2 &kp N3 &kp NO_PLUS
+		&kp HASH  &mmv MOVE_LEFT   &mmv MOVE_DOWN     &mmv MOVE_RIGHT   &sl 5       	&kp NO_STAR	&kp N4 &kp N5 &kp N6 &kp NO_DASH
 		&kp LSFT  &kp KPLS 	   &mwh SCROLL_DOWN   &mwh SCROLL_UP    &kp BSLH   	&kp N0       	&kp N7 &kp N8 &kp N9 &kp DOT
 					  			&to 0 &dth LGUI BACKSPACE      	&kp KP_ENTER    &to 3 
 		>;
-		};	
+		};
 		
 		tri_layer {
 		bindings = <
@@ -132,6 +132,16 @@
 									&kp SPACE &kp SPACE	&to 0 &kp F4
 		>;
 		};	
+		
+		right_layer
+		bindings = <
+		&kp Q	   &kp F1 &kp F2 &kp F3 &kp F12						&kp KP_DIVIDE   &kp KP_N1 &kp KP_N2 &kp KP_N3 &kp KP_PLUS
+		&kp M	   &kp F4 &kp F5 &kp F6 &kp F11						&kp KP_MULTIPLY &kp KP_N4 &kp KP_N5 &kp KP_N6 &kp KP_MINUS
+		&kp LSFT   &kp F7 &kp F8 &kp F9 &kp F10						&kp KP_N0      	&kp KP_N7 &kp KP_N8 &kp KP_N9 &kp KP_DOT
+				&to 0 &dth LGUI BACKSPACE      					&kp KP_EQUAL    &kp KP_NUM 
+		>;
+		};
+
         
 	};
 };
